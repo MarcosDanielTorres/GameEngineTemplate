@@ -10,6 +10,13 @@ workspace "GameEngine"
 
  outputdir = "%{cfg.buildcfg}-%{cfg.architecture}"
 
+
+ IncludeDir = {}
+ IncludeDir["GLFW"] = "GameEngine/vendor/GLFW/include"
+
+ include "GameEngine/vendor/GLFW"
+
+
  project "GameEngine"
  location "GameEngine"
  kind "ConsoleApp"
@@ -25,11 +32,6 @@ workspace "GameEngine"
   "%{prj.name}/src/**.c",
   "%{prj.name}/src/**.txt"
  }
-
- IncludeDir = {}
- IncludeDir["GLFW"] = "GameEngine/vendor/GLFW/include"
-
- include "GameEngine/vendor/GLFW"
 
 
  includedirs
