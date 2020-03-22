@@ -1,7 +1,9 @@
 # Binaries
+**/bin
+!*/
 !vendor/bin/premake/
-**/bin/
 bin-int/
+
 
 # Hazel files
 *.log
