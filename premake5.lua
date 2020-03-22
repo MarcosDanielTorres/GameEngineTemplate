@@ -1,5 +1,6 @@
 workspace "GameEngine"
  architecture "x64"
+ startproject "GameEngine"
 
  configurations
  {
